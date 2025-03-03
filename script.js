@@ -1,23 +1,34 @@
 let order = {
-  liberica: 0,
-  robusta: 0,
-  arabica: 0,
-  ambachino: 0,
-  cold_brew: 0,
-  affogato: 0,
-  espresso: 0,
-  americano: 0,
-  latte: 0,
-  cappuccino: 0,
-  mocha: 0,
-  macchiato: 0,
-  flat_white: 0,
-  ristretto: 0,
-  lungo: 0,
+  Liberica: 0,
+  Robusta: 0,
+  Arabica: 0,
+  Ambachino: 0,
+  "Cold Brew": 0,
+  Affogato: 0,
+  Espresso: 0,
+  Americano: 0,
+  Latte: 0,
+  Cappuccino: 0,
+  Mocha: 0,
+  Macchiato: 0,
+  "Flat White": 0,
+  Ristretto: 0,
+  Lungo: 0,
 };
 
+function updateBadge() {
+  let badgeElement = document.getElementById("badgeIcon");
+  let badgeCount = Object.values(order).filter((value) => value > 0).length;
+  if (badgeCount > 0) {
+    badgeElement.textContent = badgeCount;
+    badgeElement.style.display = "block";
+  } else {
+    badgeElement.style.display = "none";
+  }
+}
+
 function updatePreview() {
-  let preview = document.getElementById("preview");
+  let previews = document.querySelectorAll(".preview");
   let listOrder = "";
 
   for (let item in order) {
@@ -25,13 +36,17 @@ function updatePreview() {
       listOrder += `• ${item}: ${order[item]}<br>`;
     }
   }
-  preview.innerHTML = listOrder || "Belum ada pesanan";
+
+  previews.forEach((preview) => {
+    preview.innerHTML = listOrder || "Belum ada pesanan";
+  });
 }
 
 function add(menu) {
   order[menu]++;
   document.getElementById(menu).innerText = order[menu];
   updatePreview();
+  updateBadge();
 }
 
 function remove(menu) {
@@ -40,6 +55,7 @@ function remove(menu) {
     document.getElementById(menu).innerText = order[menu];
   }
   updatePreview();
+  updateBadge();
 }
 
 function pay() {
@@ -71,3 +87,14 @@ function pay() {
 
   window.open(whatsappURL, "_blank");
 }
+
+function showPopup() {
+  document.getElementById("payment").classList.add("show");
+  console.log("Popup ditampilkan"); // Debugging
+}
+
+function closePopup() {
+  document.getElementById("payment").classList.remove("show");
+  console.log("Popup ditutup"); // Debugging
+}
+updateBadge();
