@@ -61,13 +61,20 @@ body {
 }
 
 .card {
-  width: 180px;
+  width: 190px;
   height: 320px;
   border: 1px solid black;
   font-size: 10px;
   color: white;
   background-color: #2c3930;
   border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 170px;
+    height: 300px;
+  }
 }
 
 .card img {
