@@ -71,6 +71,10 @@ body {
 }
 
 @media (max-width: 600px) {
+  .coffee {
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
+}
   .card {
     width: 150px;
     height: 280px;
