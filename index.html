@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Kopi Abadi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-nav">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <h1 class="logo">Toko Kopi Abadi</h1>
+      </div>
+      <div class="container-header">
+        <!-- <input
+          class="search"
+          type="text"
+          placeholder="Cari barang kesukaanmu disini..."
+        /> -->
+      </div>
+      <div class="container-content">
+        <br />
+        <div class="coffee">
+          <div class="card">
+            <img src="asset/1.png" alt="" />
+            <div class="item">
+              <h1>Liberica</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('liberica')">-</button>
+              <span id="liberica">0</span>
+              <button onclick="add('liberica')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/2.png" alt="" />
+            <div class="item">
+              <h1>Robusta</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('robusta')">-</button>
+              <span id="robusta">0</span>
+              <button onclick="add('robusta')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/3.jpg" alt="" />
+            <div class="item">
+              <h1>Arabica</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('arabica')">-</button>
+              <span id="arabica">0</span>
+              <button onclick="add('arabica')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/4.jpg" alt="" />
+            <div class="item">
+              <h1>Ambachino</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('ambachino')">-</button>
+              <span id="ambachino">0</span>
+              <button onclick="add('ambachino')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/5.jpg" alt="" />
+            <div class="item">
+              <h1>Cold Brew</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('cold_brew')">-</button>
+              <span id="cold_brew">0</span>
+              <button onclick="add('cold_brew')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/6.jpg" alt="" />
+            <div class="item">
+              <h1>Affogato</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('affogato')">-</button>
+              <span id="affogato">0</span>
+              <button onclick="add('affogato')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/7.jpg" alt="" />
+            <div class="item">
+              <h1>Espresso</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('espresso')">-</button>
+              <span id="espresso">0</span>
+              <button onclick="add('espresso')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/8.jpg" alt="" />
+            <div class="item">
+              <h1>Americano</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('americano')">-</button>
+              <span id="americano">0</span>
+              <button onclick="add('americano')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/9.jpg" alt="" />
+            <div class="item">
+              <h1>Latte</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('latte')">-</button>
+              <span id="latte">0</span>
+              <button onclick="add('latte')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/10.jpg" alt="" />
+            <div class="item">
+              <h1>Cappuccino</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('cappuccino')">-</button>
+              <span id="cappuccino">0</span>
+              <button onclick="add('cappuccino')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/11.jpg" alt="" />
+            <div class="item">
+              <h1>Mocha</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('mocha')">-</button>
+              <span id="mocha">0</span>
+              <button onclick="add('mocha')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/12.jpg" alt="" />
+            <div class="item">
+              <h1>Macchiato</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('macchiato')">-</button>
+              <span id="macchiato">0</span>
+              <button onclick="add('macchiato')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/13.jpg" alt="" />
+            <div class="item">
+              <h1>Flat White</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('flat_white')">-</button>
+              <span id="flat_white">0</span>
+              <button onclick="add('flat_white')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/14.jpg" alt="" />
+            <div class="item">
+              <h1>Ristretto</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('ristretto')">-</button>
+              <span id="ristretto">0</span>
+              <button onclick="add('ristretto')">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/15.jpg" alt="" />
+            <div class="item">
+              <h1>Lungo</h1>
+              <p>Rp. 10.000</p>
+              <br />
+              <button onclick="remove('lungo')">-</button>
+              <span id="lungo">0</span>
+              <button onclick="add('lungo')">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary">
+          <input type="text" placeholder="Nama" id="nama" />
+          <input type="text" placeholder="Alamat" id="alamat" />
+          <span>Daftar Pesanan: </span>
+          <p id="preview">Belum ada pesanan</p>
+          <button onclick="pay()">Buat Pesanan</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
