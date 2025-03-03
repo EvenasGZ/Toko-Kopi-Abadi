@@ -33,6 +33,7 @@ body {
   background-color: white;
   width: 30px;
   height: 4px;
+  border-radius: 5px;
 }
 
 .logo {
@@ -72,7 +73,9 @@ body {
 
 @media (max-width: 600px) {
   .coffee {
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    column-gap: 0px;
+    row-gap: 15px;
 }
   .card {
     width: 150px;
