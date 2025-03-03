@@ -56,8 +56,8 @@ body {
 .coffee {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  gap: 10px;
   justify-items: center;
+  margin: 10px;
 }
 
 .card {
@@ -73,7 +73,6 @@ body {
 @media (max-width: 600px) {
   .coffee {
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 10px;
 }
   .card {
     width: 150px;
