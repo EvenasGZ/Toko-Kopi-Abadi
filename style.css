@@ -72,8 +72,8 @@ body {
 
 @media (max-width: 600px) {
   .card {
-    width: 170px;
-    height: 300px;
+    width: 150px;
+    height: 280px;
   }
 }
 
